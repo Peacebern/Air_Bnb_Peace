@@ -25,8 +25,8 @@ class BaseModel:
     def to_dict(self):
         result_dict = self.__dict__
         result_dict["__class__"] = self.__class__.__name__
-        result_dict["created_at"] = strftime(%Y-%m-%dT%H:%M:%S.%f)
-        result_dict["updated_at"] = strftime(%Y-%m-%dT%H:%M:%S.%f)
+        result_dict["created_at"] = strftime("%Y-%m-%dT%H:%M:%S.%f")
+        result_dict["updated_at"] = strftime("%Y-%m-%dT%H:%M:%S.%f")
 
         return result_dict
 
