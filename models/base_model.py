@@ -2,6 +2,7 @@
 
 import uuid
 import datetime
+from models import storage
 
 class BaseModel:
     def __init__(self, *args, **kwargs):
@@ -21,6 +22,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.datetime.now()
             self.updated_at = datetime.datetime.now()
+            storage.new(self)
 
 
     def __str__(self):
@@ -34,12 +36,13 @@ class BaseModel:
         datetime
         """
         self.updated_at = datetime.datetime.now()
+        storage.save()
 
     def to_dict(self):
         """
         :return: this returns a dictionary containing all keys/values of __dict__of the instance
         """
-        result_dict = self.__dict__
+        result_dict = self.__dict__.copy()
         result_dict["__class__"] = self.__class__.__name__
         result_dict["created_at"] = result_dict["created_at"].strftime("%Y-%m-%dT%H:%M:%S.%f")
         result_dict["updated_at"] = result_dict["updated_at"].strftime("%Y-%m-%dT%H:%M:%S.%f")
