@@ -1,6 +1,9 @@
 <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/fd/ac/b4/fdacb4f9-4c73-1ca6-5595-ef18f821ee62/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png">
 <img src="https://image.shutterstock.com/image-illustration/clone-icon-illustration-creative-sign-260nw-1497218057.jpg">
 
+
+## AIR_BNB STATIC WEBSITE DEPLOYED [CLICK HERE](https://peacebern.github.io/Air_Bnb_Peace/)
+
 # 0x00 AirBnB clone - The console
 
 In this directory you will find a implementation of a AirBnB clone.
